@@ -7,7 +7,7 @@ import pandas as pd
 import requests
 import streamlit as st
 
-API = "http://127.0.0.1:8000"
+API = "https://oil-gas-dashboard-f2vb.vercel.app"
 
 BLUE, ORANGE, GREEN, PURPLE = "#3B82F6", "#F59E0B", "#22C55E", "#8B5CF6"
 
