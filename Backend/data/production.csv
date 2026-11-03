@@ -1,0 +1,36 @@
+Column,Description
+Timestamp,Observation timestamp
+Well_ID,Well identifier
+Field_ID,Field identifier
+Depth_m,Measured drilling depth
+Formation_Depth_m,Formation depth
+ROP_m_hr,Rate of penetration
+WOB_kN,Weight on bit
+Rotary_Speed_RPM,Rotary speed
+Torque_kNm,Drilling torque
+Mud_Flow_L_min,Mud flow rate
+Mud_Density_g_cm3,Drilling mud density
+Standpipe_Pressure_MPa,Standpipe pressure
+Reservoir_Pressure_MPa,Reservoir pressure
+Reservoir_Temperature_C,Reservoir temperature
+Porosity_pct,Reservoir porosity
+Permeability_mD,Reservoir permeability
+Water_Saturation_pct,Water saturation
+Oil_Saturation_pct,Oil saturation
+Gamma_Ray_API,Gamma ray response
+Resistivity_ohm_m,Formation resistivity
+Net_Pay_m,Net productive pay thickness
+Shale_Volume_pct,Shale volume
+Flowing_BHP_MPa,Flowing bottom-hole pressure
+Choke_Size_pct,Choke opening percentage
+Pump_Rate_stb_d,Pump production rate
+Operating_Hours,Operating hours per observation day
+Downtime_hr,Downtime hours
+Oil_Rate_bpd,Current oil production rate
+Gas_Rate_Mscf_d,Current gas production rate
+Water_Rate_bpd,Current water production rate
+Water_Cut_pct,Current water cut
+GOR_scf_bbl,Gas-oil ratio
+Future_Oil_Rate_bpd,Forecast oil production rate
+Future_Gas_Rate_Mscf_d,Forecast gas production rate
+Future_Reservoir_Pressure_MPa,Forecast reservoir pressure
