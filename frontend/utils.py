@@ -151,7 +151,7 @@ def daily_df(**filters):
 def trend_chart(d, height=300):
     """Interactive oil/gas line chart (Streamlit native)."""
     if d.empty:
-        st.info("Is selection ke liye data nahi mila.")
+        st.info("No Data Found")
         return
     chart = d.set_index("date").rename(columns={"oil": "Oil Rate (bpd)", "gas": "Gas Rate (Mscf/d)"})
     st.line_chart(chart[["Oil Rate (bpd)", "Gas Rate (Mscf/d)"]], color=[BLUE, ORANGE], height=height)
@@ -170,16 +170,16 @@ def bootstrap(subtitle: str) -> SimpleNamespace:
         with left:
             st.markdown("## 🛢️ Oil & Gas Analytics System")
             st.caption(subtitle)
-        with right:
-            if connected:
-                st.badge("API Connected", icon=":material/check_circle:", color="green")
-            else:
-                st.badge("API Disconnected", icon=":material/error:", color="red")
+        # with right:
+        #     if connected:
+        #         # st.badge(icon=":material/check_circle:", color="green")
+        #     else:
+        #         st.badge("API Disconnected", icon=":material/error:", color="red")
             # st.caption(f"Last Updated: {datetime.now().strftime('%d %b %Y %I:%M %p')}")
 
-    if not connected:
-        st.error(f"FastAPI server nahi mil raha ({API}). Pehle backend chalayen: `uvicorn Backend.main:app --reload`")
-        st.stop()
+    # if not connected:
+    #     st.error(f"FastAPI server nahi mil raha ({API}). Pehle backend chalayen: `uvicorn Backend.main:app --reload`")
+    #     st.stop()
 
     total_rows, total_cols = summary["total_rows"], summary["total_columns"]
     missing_total = summary["total_missing_values"]

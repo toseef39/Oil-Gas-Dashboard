@@ -12,7 +12,7 @@ with st.container(border=True):
     with h:
         page_header("Drilling Statistics", "Statistical summary of key drilling parameters.")
     with s1:
-        sel = st.selectbox("Select Well (Optional)", ["All Wells"] + ctx.wells_info["Unique_wells"])
+        sel = st.selectbox("Select Well", ["All Wells"] + ctx.wells_info["Unique_wells"])
     with s2:
         if st.button("Refresh", icon=":material/refresh:", width="stretch"):
             st.cache_data.clear()

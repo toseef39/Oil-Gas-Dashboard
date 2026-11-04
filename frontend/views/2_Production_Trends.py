@@ -51,7 +51,7 @@ with R.container(border=True):
             columns={"oil_avg": "Oil (bpd)", "gas_avg": "Gas (Mscf/d)"})
         st.bar_chart(chart, color=[BLUE, ORANGE], stack=False, height=320)
     else:
-        st.info("Is selection ke liye data nahi mila.")
+        st.info("No Data Found.")
 
 T, F = st.columns([3, 1])
 with T.container(border=True):
